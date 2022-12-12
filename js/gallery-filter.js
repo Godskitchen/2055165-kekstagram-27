@@ -1,4 +1,4 @@
-import { getUniqRandElementsFromArr } from './utils.js';
+import { getUniqueRandomArrElement } from './utils.js';
 
 const RANDOM_FILTER_PHOTOS_COUNT = 10;
 
@@ -12,7 +12,7 @@ const showFilterOptions = () => {
   filterMenu.classList.remove('img-filters--inactive');
 };
 
-const getRandomFilterPhotos = (photoObjects) => getUniqRandElementsFromArr(RANDOM_FILTER_PHOTOS_COUNT, photoObjects);
+const getRandomFilterPhotos = (photoObjects) => getUniqueRandomArrElement(RANDOM_FILTER_PHOTOS_COUNT, photoObjects);
 
 const comparePhotoObjects = (obj1, obj2) => obj2.comments.length - obj1.comments.length;
 

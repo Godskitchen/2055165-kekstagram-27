@@ -13,7 +13,7 @@ const getRandomArrElement = (array) => array[getRandomIntNumber(0, array.length 
 
 const getUniqueId = () => Math.floor(Date.now() * Math.random());
 
-const getUniqRandElementsFromArr = (elementsCount, sourceArray) => {
+const getUniqueRandomArrElement = (elementsCount, sourceArray) => {
 
   const uniqueSourceArray = Array.from(new Set(sourceArray));
 
@@ -58,7 +58,7 @@ export {
   getRandomIntNumber,
   getUniqueId,
   getRandomArrElement,
-  getUniqRandElementsFromArr,
+  getUniqueRandomArrElement,
   checkStrLength,
   isEscapeKey,
   debounce
